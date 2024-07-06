@@ -1,22 +1,12 @@
+import { Powerline } from "@/components/powerline";
 import styles from "./page.module.css";
-import { Box, Text, Image, Heading } from "@chakra-ui/react";
+import { Box, Text, Image } from "@chakra-ui/react";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <Box padding={5} height={"100%"} mt={20}>
-        <Heading
-          as={"h1"}
-          fontSize={{ base: "2xl", md: "3xl" }}
-          fontWeight={"bold"}
-          color={"#68D391"}
-        >
-          <span>
-            [<span className={styles.kali}>kali@kali</span> ~ ]:{" "}
-            <span className={styles.kali}>$</span>
-          </span>{" "}
-          whoami
-        </Heading>
+        <Powerline pathname={" whoami"} />
         <Box
           display={"flex"}
           flexDir={"column"}
