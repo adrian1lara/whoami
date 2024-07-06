@@ -26,7 +26,11 @@ export default function ChakraLayout({
         width={"100%"}
         color="blackAlpha.700"
       >
-        <GridItem area={"header"} pos={"fixed"} width={"7xl"}>
+        <GridItem
+          area={"header"}
+          pos={"fixed"}
+          width={{ base: "90%", md: "7xl" }}
+        >
           <Header />
         </GridItem>
         <GridItem area={"nav"}>
